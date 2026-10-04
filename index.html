@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Chu's China Bistro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="brand" onclick="showHome(); return false;">
+      David Chu's China Bistro
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="home">
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Good food, simple choices.</p>
+
+      <div class="tiles">
+        <a class="tile" href="#" onclick="$dc.loadMenuItems('L'); return false;">
+          <span>Menu</span>
+        </a>
+
+        <a class="tile special" href="#" onclick="loadSpecials(); return false;">
+          <span>Specials</span>
+        </a>
+
+        <a class="tile" href="#" onclick="showMap(); return false;">
+          <span>Map</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
